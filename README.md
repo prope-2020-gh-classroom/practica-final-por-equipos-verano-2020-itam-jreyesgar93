@@ -13,5 +13,5 @@ Los paquetes utilizados son:
 |Integrante|User github|
 |:--:|:--:|
 |Ita|[sancas96](https://github.com/sancas96)|
-|Mario|[palmoreck](https://github.com/mhnk77)|
+|Mario|[mhnk77](https://github.com/mhnk77)|
 |José|[jreyesgar93](https://github.com/jreyesgar93)|
