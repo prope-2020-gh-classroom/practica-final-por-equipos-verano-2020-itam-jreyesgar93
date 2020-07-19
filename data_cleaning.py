@@ -7,14 +7,13 @@ Created on Wed Jul 15 09:27:50 2020
 
 
 import pandas as pd
-import os
 import matplotlib.pyplot as plt
 import numpy as np
 
 
 """Carga de datos"""
-directorio = os.getcwd() ### Necesario estar en el directorio del programa
-df=pd.read_csv(directorio+"\\Video_Games_Sales_as_at_22_Dec_2016.csv")
+#directorio = os.getcwd() ### Necesario estar en el directorio del programa
+df=pd.read_csv("Video_Games_Sales_as_at_22_Dec_2016.csv")
 
 
 """Exploración inicial de los datos"""
@@ -38,6 +37,7 @@ df_summary=df.describe()
 df.User_Score[df.User_Score=="tbd"]="nan"
 df.User_Score=df.User_Score.astype(float)
 df.User_Score=df.User_Score.transform(lambda x: x*10)
+df.Year_of_Release = df.Year_of_Release.astype(float)
                                       
                                       
                                       
