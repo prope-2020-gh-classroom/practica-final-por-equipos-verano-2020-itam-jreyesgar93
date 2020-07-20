@@ -42,30 +42,30 @@ df.Year_of_Release = df.Year_of_Release.astype(float)
                                       
                                       
                                       
-print(df.columns)
+#print(df.columns)
     
-"""Exploración de Datos Numéricos Principales"""
+#"""Exploración de Datos Numéricos Principales"""
 
-fig1,axs=plt.subplots(1,2)
-fig1.suptitle("Box-Plot of Scores")
-axs[0].boxplot(df.Critic_Score[~np.isnan(df.Critic_Score)])
-axs[0].set_xticklabels(["Critic Score"])
-axs[1].boxplot(df.User_Score[~np.isnan(df.User_Score)])
-axs[1].set_xticklabels(["User Score"])
-
-num_data_summary=dict({"Critic_Score":df.Critic_Score.describe(),
-                  "User_Score":df.User_Score.describe()})
-
-
-
-"""Exploración de datos Categóricos"""
-
-cat_data_counts=dict({"Platform":df.Platform.value_counts(),
-                  "Year_of_Release":df.Year_of_Release.value_counts(),
-                  "Genre":df.Genre.value_counts(),
-                  "Publisher":df.Publisher.value_counts(),
-                  "Rating":df.Rating.value_counts()})
-
+#fig1,axs=plt.subplots(1,2)
+#fig1.suptitle("Box-Plot of Scores")
+#axs[0].boxplot(df.Critic_Score[~np.isnan(df.Critic_Score)])
+#axs[0].set_xticklabels(["Critic Score"])
+#axs[1].boxplot(df.User_Score[~np.isnan(df.User_Score)])
+#axs[1].set_xticklabels(["User Score"])
+#
+#num_data_summary=dict({"Critic_Score":df.Critic_Score.describe(),
+#                  "User_Score":df.User_Score.describe()})
+#
+#
+#
+#"""Exploración de datos Categóricos"""
+#
+#cat_data_counts=dict({"Platform":df.Platform.value_counts(),
+#                  "Year_of_Release":df.Year_of_Release.value_counts(),
+#                  "Genre":df.Genre.value_counts(),
+#                  "Publisher":df.Publisher.value_counts(),
+#                  "Rating":df.Rating.value_counts()})
+#
 
 
 
